@@ -1,0 +1,13 @@
+server:
+  port: 8223
+
+app:
+  database:
+    couchbase:
+      connectionString:   couchbase://127.0.0.1
+      userName: userName1
+      password: Password1
+      configBucketName: configuration-store
+      collectionName: application-properties
+      scope: ${env:technical}
+
